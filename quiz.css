@@ -1,0 +1,8 @@
+article {
+  border: black 2px solid;
+}
+
+.clicked {
+  border: black 5px;
+  background-color: yellow;
+}

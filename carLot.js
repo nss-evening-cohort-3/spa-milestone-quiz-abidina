@@ -1,19 +1,19 @@
 "use strict";
 
-var CarLot = (function () {
+var CarLot = (function (populatePage) {
   var inventory = [];
-
   return {
-    getInventory: function () {
-
-    },
     loadInventory: function (callback) {
-      var inventoryLoader = new XMLHttpRequest();
+      var inventoryImport = new XMLHttpRequest();
+      inventoryImport.addEventListener('load', populatePage);
+      inventoryImport.open("GET", "inventory.json");
+      inventoryImport.send();
 
-      inventoryLoader.addEventListener("load", function () {
-
+      inventoryImport.addEventListener("load", function() {
+        var data = JSON.parse(this.responseText);
+        // fillInventory(data);
+        callback(inventory); // calls populatePage function bc that function was passed to 'loadInventory'
       });
     }
-  };
-
-})();
+  }
+}( CarLot || {} ));
