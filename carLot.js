@@ -12,7 +12,6 @@ var CarLot = (function (anything) {
       inventoryImport.addEventListener("load", function() {
         var data = JSON.parse(this.responseText);
         inventory = data;
-        console.log(inventory);
         CarLot.populatePage();
       });
       }

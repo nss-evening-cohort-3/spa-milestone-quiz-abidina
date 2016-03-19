@@ -7,14 +7,15 @@ var CarLot = (function (anything) {
   anything.activateEvents = function() {
   // affect border
   var carCards = document.getElementsByClassName('carCards');
-  console.log(carCards);
   for (let i = 0; i < carCards.length; i++) {
     carCards[i].addEventListener("click", function(e) {
-      console.log("hi");
-      for (let i = 0; i < CarLot.getInventory.length; i++) {
+      //remove other clicked elements
+      for (let i = 0; i < carCards.length; i++) {
         carCards[i].classList.remove("clicked");
       };
+      //add styling to clicked element
       e.target.closest("article").classList.add("clicked");
+      //focus on input on card click
       inputEl.value = "";
       inputEl.focus();
     });

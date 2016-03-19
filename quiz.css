@@ -4,5 +4,5 @@ article {
 
 .clicked {
   border: black 5px solid;
-  background-color: yellow;
+  background-color: lightgrey;
 }
