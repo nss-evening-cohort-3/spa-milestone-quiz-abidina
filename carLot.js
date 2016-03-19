@@ -1,19 +1,22 @@
 "use strict";
 
-var CarLot = (function (populatePage) {
+var CarLot = (function (anything) {
   var inventory = [];
-  return {
-    loadInventory: function (callback) {
+    anything.getInventory = function () {
+      return inventory;
+    };
+    anything.loadInventory = function (callback) {
       var inventoryImport = new XMLHttpRequest();
-      inventoryImport.addEventListener('load', populatePage);
       inventoryImport.open("GET", "inventory.json");
       inventoryImport.send();
-
       inventoryImport.addEventListener("load", function() {
         var data = JSON.parse(this.responseText);
-        // fillInventory(data);
-        callback(inventory); // calls populatePage function bc that function was passed to 'loadInventory'
+        inventory = data;
+        console.log(inventory);
+        CarLot.populatePage();
       });
-    }
-  }
+      }
+      return anything;
 }( CarLot || {} ));
+
+CarLot.loadInventory();

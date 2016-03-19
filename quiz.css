@@ -3,6 +3,6 @@ article {
 }
 
 .clicked {
-  border: black 5px;
+  border: black 5px solid;
   background-color: yellow;
 }
