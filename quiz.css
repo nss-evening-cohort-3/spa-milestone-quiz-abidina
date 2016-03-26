@@ -1,8 +1,11 @@
 article {
-  border: black 2px solid;
+  border: white 2px solid;
+  box-shadow: 2px 5px 5px black;
+  margin-bottom: 2%;
 }
 
 .clicked {
   border: black 5px solid;
   background-color: lightgrey;
+  box-shadow: 4px 10px 10px black;
 }
