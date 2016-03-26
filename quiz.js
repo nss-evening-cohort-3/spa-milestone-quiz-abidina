@@ -7,7 +7,7 @@ var CarLot = (function (anything) {
   let carEl = document.getElementById('carElement');
   var carInventory = CarLot.getInventory();
   // Loop over the inventory and populate the page
-  for (var i = 0; i < carInventory.cars.length; i++) {
+  for (let i = 0; i < carInventory.cars.length; i++) {
     var currentCar = carInventory.cars[i];
     var fillCard = "";
     //create individual ids in DOM for articles
