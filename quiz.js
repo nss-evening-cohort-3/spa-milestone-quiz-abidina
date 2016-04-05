@@ -1,7 +1,5 @@
 "use strict";
 
-var btn = document.getElementById('uselessBtn');
-
 var CarLot = (function (anything) {
   anything.populatePage = function() {
   var carEl = document.getElementById('carElement');
@@ -14,7 +12,7 @@ var CarLot = (function (anything) {
     let carCard = buildCard(currentCar, i);
     let cardDiv = document.createElement('div');
     cardDiv.innerHTML = (carCard);
-    carEl.appendChild(cardDiv);
+    carEl.appendChild(cardDiv); //adds div to dom while maintaining event listeners
     let card = document.getElementById('card--${index}');
   }
   

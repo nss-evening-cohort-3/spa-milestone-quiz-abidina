@@ -1,6 +1,15 @@
-"use strict";
+// "use strict";
 
-var CarLot = (function (anything) {
+// var CarLot = (function (anything) {
+//   var btn = document.getElementById('uselessBtn');
 
+//   anything.resetCard = function() {
+//     btn.addEventListener('click', function(e){
+//       article.classList.remove('clicked');
+//     })
+//   };
 
-}( CarLot || {} ));
+//   anything.changeCard = function(clickedCar, color) {
+
+//   };
+// }( CarLot || {} ));
