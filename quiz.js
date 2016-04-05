@@ -26,9 +26,8 @@ function buildCard (currentCar, i) {
 
     // create individual ids in DOM for articles
     fillCard += '<article class="carCards col-md-4" id="currentCard' + i + '" style="border: 2px solid ' + currentCar.color + '"><header>' + currentCar.make + ' ' + currentCar.model + '</header><section><p>' + currentCar.year + ', ' + currentCar.color + '</p><p>' + currentCar.price + '</p></section><section class="description"><p>' + currentCar.description + '</p></section><footer>' + "Available" + '</footer></article>';
-console.log(fillCard);
+
     return fillCard;
-      // carEl.innerHTML += fillCard;
     }
 
 }
