@@ -32,6 +32,7 @@ function buildCard (currentCar, i) {
 
 
 CarLot.loadInventory(anything.populatePage);
+
 return anything;
 
 }( CarLot || {} ));

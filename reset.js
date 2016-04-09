@@ -5,10 +5,15 @@ var CarLot = (function (anything) {
 
   anything.resetCard = function() {
     btn.addEventListener('click', function(e){
-      article.classList.remove('clicked');
+      event.preventDefault();
+      var clickedCards = document.getElementsByClassName('clicked');
+      clickedCards[0].classList.remove('clicked');
     })
   };
 
+  CarLot.resetCard();
+
+  
   // anything.changeCard = function(clickedCar, color) {
 
   // };
