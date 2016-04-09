@@ -5,17 +5,16 @@ var CarLot = (function (anything) {
     anything.getInventory = function () {
       return inventory;
     };
-    anything.loadInventory = function (callback) {
+    anything.loadInventory = function (populatePage) {
+      // populatePage is passed in from quiz.js (callback)
       var inventoryImport = new XMLHttpRequest();
       inventoryImport.open("GET", "inventory.json");
       inventoryImport.send();
       inventoryImport.addEventListener("load", function() {
         var data = JSON.parse(this.responseText);
         inventory = data;
-        CarLot.populatePage();
+        populatePage(inventory);
       });
       }
       return anything;
 }( CarLot || {} ));
-
-CarLot.loadInventory();

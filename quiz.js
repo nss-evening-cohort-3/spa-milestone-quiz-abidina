@@ -1,10 +1,10 @@
 "use strict";
 
 var CarLot = (function (anything) {
-  anything.populatePage = function() {
+  anything.populatePage = function(carInventory) {
   var carEl = document.getElementById('carElement');
   carEl.innerHTML = "";
-  var carInventory = CarLot.getInventory();
+  // var carInventory = CarLot.getInventory();
 
   // Loop over the inventory and populate the page
   for (let i = 0; i < carInventory.cars.length; i++) {
@@ -31,7 +31,7 @@ function buildCard (currentCar, i) {
 }
 
 
-CarLot.loadInventory();
+CarLot.loadInventory(anything.populatePage);
 return anything;
 
 }( CarLot || {} ));

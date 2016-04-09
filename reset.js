@@ -12,4 +12,6 @@ var CarLot = (function (anything) {
   // anything.changeCard = function(clickedCar, color) {
 
   // };
+
+  return anything;
 }( CarLot || {} ));
