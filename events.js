@@ -15,7 +15,7 @@ var CarLot = (function (anything) {
       };
       //add styling to clicked element
       e.target.closest("article").classList.add("clicked");
-      //focus on input on card click
+      // focus on input on card click
       inputEl.value = "";
       inputEl.focus();
     });

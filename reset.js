@@ -6,7 +6,7 @@ var CarLot = (function (anything) {
   anything.resetCard = function() {
     btn.addEventListener('click', function(e){
       event.preventDefault();
-      let clickedCard = document.getElementsByClassName('clicked');
+      var clickedCard = document.getElementsByClassName('clicked');
       clickedCard[0].classList.remove('clicked'); // have to access it with index bc "getelementsbyclassname" creates an array
     })
   };
@@ -14,14 +14,15 @@ var CarLot = (function (anything) {
   CarLot.resetCard();
 
 
-  anything.changeCard = function(clickedCar, color) {
-    let clickedCard = document.getElementsByClassName('clicked');
+  // anything.changeCard = function(clickedCard, colorName) {
+  //   var clickedCard = document.getElementsByClassName('clicked');
+  //   clickedCard[0].style.backgroundColor="lightgray";
+  //   //The other function changes the thickness of the border of a car element, and changes its background color. The function must accept two arguments.
+  //     // 1. A car DOM element that was clicked on.
+  //     // 1. A color name.
+  // };
 
-  };
 
-  //The other function changes the thickness of the border of a car element, and changes its background color. The function must accept two arguments.
-    // 1. A car DOM element that was clicked on.
-    // 1. A color name.
 
   return anything;
 }( CarLot || {} ));
