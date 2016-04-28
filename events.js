@@ -10,11 +10,10 @@ var CarLot = (function (anything) {
   for (let i = 0; i < carCards.length; i++) {
     carCards[i].addEventListener("click", function(e) {
       //remove other clicked elements
-      for (let i = 0; i < carCards.length; i++) {
-        carCards[i].classList.remove("clicked");
-      };
+      CarLot.resetCard(carCards);
       //add styling to clicked element
       e.target.closest("article").classList.add("clicked");
+      CarLot.changeCard(clickedEl, "lightgray");
       // focus on input on card click
       inputEl.value = "";
       inputEl.focus();
@@ -23,10 +22,10 @@ var CarLot = (function (anything) {
 }
   // when user begins typing in the input box, bio is mirrored to input
   inputEl.addEventListener("keyup", function(e) {
-    var clicked = clickedEl[0].children[2].children[0];
+    var clicked = clickedEl[0].children[2].children[0]; 
     clicked.innerHTML = e.target.value;
   });
 
   return anything;
 
-}( CarLot || {} ));
+})( CarLot || {} );

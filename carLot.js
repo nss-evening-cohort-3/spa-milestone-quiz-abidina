@@ -17,4 +17,4 @@ var CarLot = (function (anything) {
       });
       }
       return anything;
-}( CarLot || {} ));
+})( CarLot || {} );
