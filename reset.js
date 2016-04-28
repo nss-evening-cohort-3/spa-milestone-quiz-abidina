@@ -14,13 +14,13 @@ var CarLot = (function (anything) {
   CarLot.resetCard();
 
 
-  // anything.changeCard = function(clickedCard, colorName) {
-  //   var clickedCard = document.getElementsByClassName('clicked');
-  //   clickedCard[0].style.backgroundColor="lightgray";
-  //   //The other function changes the thickness of the border of a car element, and changes its background color. The function must accept two arguments.
-  //     // 1. A car DOM element that was clicked on.
-  //     // 1. A color name.
-  // };
+  anything.changeCard = function(clickedCard, colorName) {
+    var clickedCard = document.getElementsByClassName('clicked');
+    clickedCard[0].style.backgroundColor= colorName;
+    //The other function changes the thickness of the border of a car element, and changes its background color. The function must accept two arguments.
+      // 1. A car DOM element that was clicked on.
+      // 1. A color name.
+  };
 
 
 
