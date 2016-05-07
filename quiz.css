@@ -1,0 +1,19 @@
+article {
+  border: 2px solid;
+  box-shadow: 2px 5px 5px black;
+  margin-bottom: 2%;
+  font-family: sans-serif;
+  height: 225px;
+  background-color: white;
+}
+
+.clicked {
+  border-width: 5px !important;
+  box-shadow: 4px 10px 10px black;
+}
+
+footer {
+  font-size: 1.2em;
+  font-style: italic;
+  padding-bottom: 1%;
+}

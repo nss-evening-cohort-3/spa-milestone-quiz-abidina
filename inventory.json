@@ -1,0 +1,58 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "color": "FireBrick",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },    
+    {
+      "make": "Hyundai",
+      "model": "Santa Fe",
+      "year": "2001",
+      "price": "300",
+      "color": "GoldenRod",
+      "purchased": false,
+      "description": "This is a very sad 2001 Hyundai Santa Fe with a blown headgasket and a fading paint job. Almost at 200000 miles!"
+    },    
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "year": "1999",
+      "price": "500",
+      "color": "Silver",
+      "purchased": false,
+      "description": "This is the only other type of car I could think of."
+    }, 
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "color": "FireBrick",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },    
+    {
+      "make": "Hyundai",
+      "model": "Santa Fe",
+      "year": "2001",
+      "price": "300",
+      "color": "GoldenRod",
+      "purchased": false,
+      "description": "This is a very sad 2001 Hyundai Santa Fe with a blown headgasket and a fading paint job. Almost at 200000 miles!"
+    },    
+    {
+      "make": "Toyota",
+      "model": "Corolla",
+      "year": "1999",
+      "price": "500",
+      "color": "Silver",
+      "purchased": false,
+      "description": "This is the only other type of car I could think of."
+    }
+  ]
+}
